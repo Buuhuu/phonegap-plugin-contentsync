@@ -1,0 +1,6 @@
+{
+    "name": "phonegap-plugin-contentsync-browsersupport",
+    "dependencies": {
+        "body-parser": "1.17.2"
+    }
+}

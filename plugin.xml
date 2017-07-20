@@ -23,8 +23,10 @@
     <source-file src="src/android/Sync.java" target-dir="src/com/adobe/phonegap/contentsync"/>
   </platform>
   <platform name="browser">
+    <hook type="before_run" src="scripts/forBrowserPlatform/attachContentSyncHandler.js" />
+    <hook type="after_plugin_install" src="scripts/forBrowserPlatform/installDependencies.js" />
     <js-module src="src/browser/Sync.js" name="Sync">
-      <merges target="ContentSync"/>
+      <runs/>
     </js-module>
   </platform>
   <platform name="wp8">
